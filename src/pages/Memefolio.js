@@ -445,7 +445,7 @@ const fetchData = async () => {
           )}
         </div>
             <div className='Memefolio-text' > 
-              <h1>memefolio</h1>
+              <h1>Roundtripped</h1>
               <p>check your memecoin P&L easily with just a click.</p>
               <div className="input-group">
                 <input
