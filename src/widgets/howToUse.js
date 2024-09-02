@@ -19,12 +19,12 @@ function HowToUseCarousel() {
 
   const carouselItems = [
     <div className='carousel-item' >
-      <h1>Welcome to memefolio!</h1>
-      <p>Using memefolio, you can check all your P&L on memecoins!</p>
-      <p>It is especially designed for bonkbot users, who trades with SOL pairs.</p>
+      <h1>Welcome to Roundtripped!</h1>
+      <p>Using Roundtripped, you can check all your P&L on memecoins!</p>
+      <p>It is especially designed for pumpfun users, who trades with SOL pairs.</p>
       <p style={{fontWeight: "bold"}} >1. Start by Connecting your wallet</p>
-      <p style={{fontWeight: "bold"}} >2. If you have more than 10$ BONK in your wallet, you can make a search!</p>
-      <p style={{fontWeight: "bold"}} >3. Simply put your wallet address and get your memefolio!</p>
+      <p style={{fontWeight: "bold"}} >2. If you have more than 10$ Roundtripped in your wallet, you can make a search!</p>
+      <p style={{fontWeight: "bold"}} >3. Simply put your wallet address and get your Roundtripped Data!</p>
       <p>Here is a simple introduction that will never shown again once you go through it!</p>
 
     </div>,
@@ -33,7 +33,7 @@ function HowToUseCarousel() {
       <p>1. Check plays and see P&L for every token!</p>
       <p>2. Check every transaction by clicking token name!</p>
       <p>3. Check best plays and sort your tokens!</p>
-      <p>4. Check holdings and trade it on bonkbot!</p>
+      <p>4. Check holdings and trade it on pumpfun!</p>
       <button className='cookie-button' onClick={handleClose}>Got It!</button>
     </div>]; // Example carousel items
 
