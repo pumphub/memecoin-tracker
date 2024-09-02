@@ -44,7 +44,7 @@ function Memefolio() {
 
       try {
         const tokenBalances = await connection.getParsedTokenAccountsByOwner(publicKey,{
-          mint: new web3.PublicKey("DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263")
+          mint: new web3.PublicKey("8MtZneQSawdVtHcirQpRCFGNqhRDoJQMMyasssVPyvj4")
       });
         setBalance((tokenBalances.value[0].account.data.parsed.info.tokenAmount.uiAmount).toFixed(2));
 
@@ -382,10 +382,10 @@ async function fetchTokensWithNonZeroBalance() {
 
 function buttonChecker() {
 
-  if(isValidAddress && walletConnected && balance > 10000){
+  if(isValidAddress && walletConnected && balance > 1000){
     setButtonText("check if you're rekt")
     setButtonLogic(true)
-  } else if(walletConnected && balance < 10000){
+  } else if(walletConnected && balance < 1000){
     setButtonText("you need at least 10$ ROUNDTRIP to search")
     setButtonLogic(false)
   } else if(!walletConnected){
