@@ -386,7 +386,7 @@ function buttonChecker() {
     setButtonText("check if you're rekt")
     setButtonLogic(true)
   } else if(walletConnected && balance < 10000){
-    setButtonText("you need at least 10$ bonk to search")
+    setButtonText("you need at least 10$ ROUNDTRIP to search")
     setButtonLogic(false)
   } else if(!walletConnected){
     setButtonText("please connect wallet")
@@ -440,7 +440,7 @@ const fetchData = async () => {
           ) : (
             <div className='wallet-connection-success' >
               <p>Holdings:</p>
-              <p>${balance} BONK!</p>
+              <p>${balance} ROUNDTRIP!</p>
             </div>
           )}
         </div>
@@ -456,7 +456,7 @@ const fetchData = async () => {
                 />
                 <button onClick={fetchData} disabled={!buttonLogic}>{buttonText}</button>
               </div>
-              <span>- sol change is calculated with buys and sells. <br></br> - airdrops are tokens that are sent from different wallets. <br></br> - especially developed for bonkbot users <br></br> - jupiter-raydium users may not get correct results <br></br> - Prices can differ because of high volatility, estimated value might be wrong <br></br> - there might be errors since this is early alpha.  </span>
+              <span>- sol change is calculated with buys and sells. <br></br> - airdrops are tokens that are sent from different wallets. <br></br> - especially developed for Pumpfun users <br></br> - Bot users may not get correct results <br></br> - Prices can differ because of high volatility, estimated value might be wrong <br></br> - there might be errors since this is early alpha.  </span>
             </div>
           </header>
         <div
