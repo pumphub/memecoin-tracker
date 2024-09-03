@@ -44,7 +44,7 @@ function Memefolio() {
 
       try {
         const tokenBalances = await connection.getParsedTokenAccountsByOwner(publicKey,{
-          mint: new web3.PublicKey("6iZjpBJPmwBEfJKoG6fKJkJHgn19U5gizLVdyh4vpump")
+          mint: new web3.PublicKey("CAHERE")
       });
         setBalance((tokenBalances.value[0].account.data.parsed.info.tokenAmount.uiAmount).toFixed(2));
 
@@ -382,11 +382,11 @@ async function fetchTokensWithNonZeroBalance() {
 
 function buttonChecker() {
 
-  if(isValidAddress && walletConnected && balance > 1000){
+  if(isValidAddress && walletConnected && balance > 50000){
     setButtonText("check if you're rekt")
     setButtonLogic(true)
-  } else if(walletConnected && balance < 1000){
-    setButtonText("you need at least 10$ ROUNDTRIP to search")
+  } else if(walletConnected && balance < 50000){
+    setButtonText("you need at least 50000 ROUNDTRIP to search")
     setButtonLogic(false)
   } else if(!walletConnected){
     setButtonText("please connect wallet")
@@ -456,7 +456,7 @@ const fetchData = async () => {
                 />
                 <button onClick={fetchData} disabled={!buttonLogic}>{buttonText}</button>
               </div>
-              <span>- sol change is calculated with buys and sells. <br></br> - airdrops are tokens that are sent from different wallets. <br></br> - especially developed for Pumpfun users <br></br> - Bot users may not get correct results <br></br> - Prices can differ because of high volatility, estimated value might be wrong <br></br> - Official CA: .  </span>
+              <span>- sol change is calculated with buys and sells. <br></br> - airdrops are tokens that are sent from different wallets. <br></br> - especially developed for Pumpfun users <br></br> - Make sure to hold enough $ROUNDTRIP in your Wallet <br></br> - Prices can differ because of high volatility, estimated value might be wrong <br></br> - Official CA:  .  </span>
             </div>
           </header>
         <div
