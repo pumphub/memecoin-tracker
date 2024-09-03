@@ -456,7 +456,7 @@ const fetchData = async () => {
                 />
                 <button onClick={fetchData} disabled={!buttonLogic}>{buttonText}</button>
               </div>
-              <span>- sol change is calculated with buys and sells. <br></br> - airdrops are tokens that are sent from different wallets. <br></br> - especially developed for Pumpfun users <br></br> - Make sure to hold enough $ROUNDTRIP in your Wallet <br></br> - Prices can differ because of high volatility, estimated value might be wrong <br></br> - Official CA:  .  </span>
+              <span>- sol change is calculated with buys and sells. <br></br> - airdrops are tokens that are sent from different wallets. <br></br> - especially developed for Pumpfun users <br></br> - Make sure to hold enough $ROUNDTRIP in your Wallet <br></br> - Prices can differ because of high volatility, estimated value might be wrong <br></br> - Official CA: 9ippQHGWeUWYhXgM5TZH6VAfAvgWzJerKuhLQ5hSpump .  </span>
             </div>
           </header>
         <div
