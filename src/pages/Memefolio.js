@@ -44,7 +44,7 @@ function Memefolio() {
 
       try {
         const tokenBalances = await connection.getParsedTokenAccountsByOwner(publicKey,{
-          mint: new web3.PublicKey("CAHERE")
+          mint: new web3.PublicKey("9ippQHGWeUWYhXgM5TZH6VAfAvgWzJerKuhLQ5hSpump")
       });
         setBalance((tokenBalances.value[0].account.data.parsed.info.tokenAmount.uiAmount).toFixed(2));
 
